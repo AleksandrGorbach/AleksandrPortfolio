@@ -20,7 +20,7 @@ import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 // import avatar from "../avatar.png";
 
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -101,7 +101,7 @@ const Navbar = () => {
       </Box>
       <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
         {sideList()}
-        {/* <Footer /> */}
+        <Footer />
       </Drawer>
     </React.Fragment>
   );
