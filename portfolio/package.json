@@ -20,6 +20,7 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.41.6",
+    "react-typed": "^3.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
