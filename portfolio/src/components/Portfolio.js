@@ -57,7 +57,7 @@ const projects = [
     },
 ];
 
-const Projects = () => {
+const Portfolio = () => {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainContainer}>
@@ -75,7 +75,7 @@ const Projects = () => {
                 />
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
-                    {project.name}
+                    {project.title}
                   </Typography>
                   <Typography variant="body2" color="textSecondary">
                     {project.description}
@@ -98,4 +98,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;
