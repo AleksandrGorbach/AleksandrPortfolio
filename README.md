@@ -1,4 +1,4 @@
 # AleksandrPortfolio
 
 ##
-[Deployed Link]url(https://aleksandrgobach.netlify.app/)
+[Live Version](https://aleksandrgobach.netlify.app/)
