@@ -5,7 +5,7 @@ import Home from './components';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Resume from './Aleksandr_Gorbach_Resume.pdf';
+// import Resume from './Aleksandr_Gorbach_Resume.pdf';
 
 import "./App.css";
 

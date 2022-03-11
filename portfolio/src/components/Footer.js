@@ -27,8 +27,8 @@ const Footer = () => {
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
       <BottomNavigationAction icon={<Facebook />} className={classes.root} />
-      <a target='_blank' href="https://www.linkedin.com/in/aleksandr-gorbach/"><BottomNavigationAction icon={<LinkedIn />} className={classes.root} /></a>
-      <a target='_blank' href="https://www.instagram.com/aleks_gorbach/"><BottomNavigationAction icon={<Instagram />} className={classes.root} /></a>
+      <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/aleksandr-gorbach/"><BottomNavigationAction icon={<LinkedIn />} className={classes.root} /></a>
+      <a target='_blank' rel="noreferrer" href="https://www.instagram.com/aleks_gorbach/"><BottomNavigationAction icon={<Instagram />} className={classes.root} /></a>
     </BottomNavigation>
   );
 };
