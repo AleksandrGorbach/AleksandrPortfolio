@@ -16,14 +16,15 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
     },
     cardContainer: {
+        minHeight: 380,
         maxWidth: 345,
-        margin: '3rem auto',
+        margin: '1rem auto',
     },
 }));
 
 const projects = [
     {
-        name: '5 o\'clock somehwere',
+        title: '5 o\'clock somehwere',
         description: 'A web based application that allows users to search for various cocktails and retrieve the required ingredients and image(s) of the drink',
         site: 'https://aleksandrgorbach.github.io/5-o-clock-somewhere/',
         code: 'https://githubs.com/AleksandrGorbach/5-o-clock-somewhere',
@@ -42,7 +43,7 @@ const projects = [
       title: "SkillBid",
       // img: `${SkillBid}`,
       description:
-        "A web based application that allows users to list a service/need and have potential freelance workers bid on their project/listing. A homepage that displays all active listings and has a filter/search to sort for more specific items based on the users capabilities. Users will be allowed to click on the listing(s) and bid on them as long as they are currently signed in with their account. Users can post listings and provide images|description|title|price|time-frame. Bidders can contact the original poster with any inquiries.",
+        "A web based application that allows users to list a service/need and have potential freelance workers bid on their project/listing. The landing page displays active listings and has a search feature to sort for more specific listings based on the users capabilities.",
       site: "https://awesome-jepsen-f2cb4f.netlify.app/",
       code: "https://github.com/AleksandrGorbach/Skill-Bid",
     },
@@ -84,10 +85,14 @@ const Portfolio = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" color="primary">
-                  Share
+                  <a href={project.code}>
+                    Share
+                  </a>
                 </Button>
                 <Button size="small" color="primary">
-                  Live Demo
+                  <a href={project.site}>
+                    Live Demo
+                  </a>
                 </Button>
               </CardActions>
             </Card>

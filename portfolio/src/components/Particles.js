@@ -1,6 +1,5 @@
 import React from "react";
 import { Particles as ReactParticles} from 'react-tsparticles'
-// import { Particles as ReactParticles } from "react-particles-js";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({

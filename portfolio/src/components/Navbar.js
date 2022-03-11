@@ -18,7 +18,7 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-// import avatar from "../avatar.png";
+import avatar from "../avatar.png";
 
 import Footer from "../components/Footer";
 
@@ -63,7 +63,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      {/* <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" /> */}
+      <Avatar className={classes.avatar} src={avatar} alt="Aleksandr Gorbach" />
       <Divider />
       <List>
         {menuItems.map((item, i) => (
