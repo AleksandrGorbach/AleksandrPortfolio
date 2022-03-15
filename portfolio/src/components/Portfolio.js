@@ -21,16 +21,17 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
     },
     cardContainer: {
-        minHeight: 380,
+        minHeight: 345,
         maxWidth: 345,
-        margin: '1rem auto',
+        margin: '2rem auto',
     },
 }));
 
 const projects = [
     {
+
         title: '5 o\'clock somehwere',
-        description: 'A web based application that allows users to search for various cocktails and retrieve the required ingredients and image(s) of the drink',
+        description: 'A web based application that allows users to search for various cocktails and retrieve the required ingredients and image(s) of the drink. Utilized Javascript, HTML, CSS and 3rd party API.',
         site: 'https://aleksandrgorbach.github.io/5-o-clock-somewhere/',
         code: 'https://githubs.com/AleksandrGorbach/5-o-clock-somewhere',
         image: project1,
@@ -39,7 +40,7 @@ const projects = [
       id: 2,
       title: "InsideOut",
       description:
-        "Inside Out is a mental health web application centered around expressing yourself and bringing your concerns & fears to the surface so that you can engage and grow.",
+        "Inside Out is a mental health web application centered around expressing yourself and bringing your concerns & fears to the surface so that you can engage and grow. Utilized React, AOS and Airtable API.",
       site: "https://inside-out-37728e.netlify.app/",
       code: "https://github.com/AleksandrGorbach/Inside_Out",
       image: project2,
@@ -48,7 +49,7 @@ const projects = [
       id: 3,
       title: "SkillBid",
       description:
-        "A web based application that allows users to list a service/need and have potential freelance workers bid on their project/listing. The landing page displays active listings and has a search feature to sort for more specific listings based on the users capabilities.",
+        "Web based application allowing users to list a service and have potential freelance workers bid on their listing. The landing page displays active listings and has a search feature to sort for more specific listings based on the users capabilities.",
       site: "https://awesome-jepsen-f2cb4f.netlify.app/",
       code: "https://github.com/AleksandrGorbach/Skill-Bid",
       image: project3,
@@ -62,16 +63,32 @@ const projects = [
       code: "https://github.com/AleksandrGorbach/Apex_Archive",
       image: project4,
     },
+    {
+    title: "Project 5",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    consequatur magni quod nesciunt necessitatibus molestiae non\
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    iste alias sunt veritatis nisi dolores!`,
+    // image: project5,
+  },
+  {
+    title: "Project 6",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    consequatur magni quod nesciunt necessitatibus molestiae non\
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    iste alias sunt veritatis nisi dolores!`,
+    // image: project6,
+  },
 ];
 
 const Portfolio = () => {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainContainer}>
-      <Grid  container justifyContent="center">
+      <Grid container justify="center">
         {/* Projects */}
         {projects.map((project, i) => (
-          <Grid item xs={1} sm={3} md={6} key={i}>
+          <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -82,7 +99,7 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
-                    {project.title}
+                    {project.name}
                   </Typography>
                   <Typography variant="body2" color="textSecondary">
                     {project.description}
@@ -91,14 +108,10 @@ const Portfolio = () => {
               </CardActionArea>
               <CardActions>
                 <Button size="small" color="primary">
-                  <a href={project.code}>
-                    Share
-                  </a>
+                  Share
                 </Button>
                 <Button size="small" color="primary">
-                  <a href={project.site}>
-                    Live Demo
-                  </a>
+                  Live Demo
                 </Button>
               </CardActions>
             </Card>
